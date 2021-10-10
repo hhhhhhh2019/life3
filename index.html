@@ -10,10 +10,26 @@
 			canvas {
 				background-color: white;
 			}
+			
+			button {
+				width: 100%;
+				height: 35px;
+				margin-bottom: 5px;
+			}
+			
+			.small {
+				width: 32.5%;
+			}
 		</style>
 	</head>
 	<body>
 		<canvas id="cnv"></canvas>
 		<script src="index.js"></script>
+		<button onclick="restart()">generate cells</button>
+		<button onclick="generate_rules()">change rules</button>
+		<button onclick="cells=[]">clear world</button>
+		<button onclick="cell_type=0" class="small">select red</button>
+		<button onclick="cell_type=1" class="small">select green</button>
+		<button onclick="cell_type=2" class="small">select blue</button>
 	</body>
 </html>
